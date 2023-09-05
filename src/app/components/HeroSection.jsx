@@ -11,6 +11,18 @@ const HeroSection = () => {
   const handleDownloadClick = () => {
     window.open(pdfUrl, "_blank");
   };
+  const handleScroll = (e) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="lg:py-16" id="home">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -51,7 +63,8 @@ const HeroSection = () => {
 
           <div>
             <Link
-              href="/contact"
+              href="#contact"
+              onClick={handleScroll}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
