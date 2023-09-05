@@ -10,7 +10,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Next</li>
-        <li>MERN Stact</li>
+        <li>MERN Stack</li>
         <li>PostgreSQL</li>
         <li>Prisma</li>
       </ul>
@@ -57,7 +57,7 @@ const AboutSection = () => {
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, TypeScript, Next, React, Redux, Node.js,
-            Express, PostgreSQL,  Prisma, MongoDB, Tailwind, HTML, CSS, and Git.
+            Express, PostgreSQL, Prisma, MongoDB, Tailwind, HTML, CSS, and Git.
             I am a quick learner and I am always looking to expand my knowledge
             and skill set. I am a team player and I am excited to work with
             others to create amazing applications.
