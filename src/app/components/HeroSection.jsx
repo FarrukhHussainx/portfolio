@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const pdfUrl = "/Farrukh_Hussain(Resume).pdf";
+  const pdfUrl = "/Farrukh_Hussain_(Resume).pdf";
 
   const handleDownloadClick = () => {
     window.open(pdfUrl, "_blank");
