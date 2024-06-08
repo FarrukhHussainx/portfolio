@@ -23,7 +23,7 @@ const EmailSection = () => {
     console.log(subject);
 
     try {
-      await axios.post("http://localhost:3000/api/send", {
+      await axios.post("https://farrukhhussain.vercel.app/api/send", {
         subject,
         email,
         message,
